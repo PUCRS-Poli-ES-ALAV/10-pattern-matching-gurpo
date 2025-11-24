@@ -43,6 +43,8 @@ Algoritmo de Horner para calcular o hash de uma string s[0..M-1]:
 //              Q é o módulo para o cálculo do Hash.
 //              Qual o valor de Q?  Escolha Q igual a um primo grande para minimizar a chance de colisões.
 //                       Por exemplo: o maior primo que possa ser representado com um int
+// hash(s) = (s[0] * p^(m-1) + s[1] * p^(m-2) + ...
+// + s[m-1] * p^0) % q
 
 private long hash(String s, int M) {
    long h = 0;
